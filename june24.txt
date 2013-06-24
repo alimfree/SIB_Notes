@@ -1,0 +1,20 @@
+Return Values
+	At the end of every method we create the last value "=>" will return whatever the last value is.
+
+			ex.
+			 > something = if false
+			 >	"bad"
+			 >else
+			 >	"good"
+			 >end
+
+			 >something
+			 > =>"good"
+			 tertiary operator:
+			 >something = false ? "bad" : "good"
+			 > something
+			 > "good"
+
+Symbols 
+
+usually used 
