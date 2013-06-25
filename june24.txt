@@ -1,5 +1,19 @@
+#alimfree  
+#SIB web dev class notes
+#June 24 2013
+
+
+These notes are from the following tutorial
+http://cykod.github.io/ToDoZer/
+
+Ruby best habits
+	restful 
+	If the added characters don't add value, don't include them
+
+
 Return Values
-	At the end of every method we create the last value "=>" will return whatever the last value is.
+	At the end of every method, we create the last value "=>" will return whatever 
+	the last value is.
 
 			ex.
 			 > something = if false
@@ -15,6 +29,51 @@ Return Values
 			 > something
 			 > "good"
 
-Symbols 
 
+Scope
+
+Symbols 
+	"See Treehouse video"
 usually used 
+
+Creating a rails App. http://cykod.github.io/ToDoZer/creating-rails-app.html
+
+Rails App tree 
+App
+ Controller takes input from user and passes it to the model
+ 
+ Model includes all the application's business logic. Think of it as writing 
+ 	   an api including all the methods needed to run the app
+ 
+ View only used to take information from model and display data to the user
+ 	helpers = where methods that abstract from view logic are placed and to be 
+ 	later called in the view
+
+ mailers if application needs to send emails, you can set this up here
+
+
+Crafting a home page http://cykod.github.io/ToDoZer/crafting-a-homepage.html
+
+Everytime you modify config files and gem file you must restart your application for the changes to take place except for routes Files
+
+Scaffolding
+	gives a basic restful template of a rails application to work with. 
+	
+	Unfortunately, this also creates many extra files that are 
+	unnecessary in the real world.
+
+Twitter Bootstrap
+	override and change styling variables http://twitter.github.io/bootstrap/customize.html
+
+
+Users
+	Installing Devise by adding it to gemfile
+		side-note
+		to roll back a migration 
+		rake db:rollback be careful not to roll back after pushing production
+		Documentation on devise http://rubydoc.info/github/plataformatec/devise/master/frames
+		
+		check out rdoc which produces online documentation for ruby projects. 
+
+Views
+	Annoying stuff
