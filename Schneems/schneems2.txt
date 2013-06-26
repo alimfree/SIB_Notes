@@ -1,0 +1,82 @@
+#alimfree
+#PSQL Databases Modeling Relationships and Active Record
+
+resource: http://schneems.com/post/25503708759/databases-rails-week-2-modeling-relationships-and
+
+Primary Key 
+	- Identifies a different record in a database 
+	- Every table should have a unique key
+Foreign Key
+	- establishes a link between two tables. 
+	- A foreign key is used to identify a row of another table. 
+	  Specifically a foreign key is used to find a primary key 
+	  in another table. 
+
+JOIN function 
+	- Join is used to execute two queries simultaneously. 
+	- example:
+
+		Look up users with a name of john and then find all the
+		cars that have a user_id that matches that.
+
+		=> SELECT users.* FROM users JOIN cars ON cars.user_id 
+		=> WHERE user_name = "john";
+	- example_2
+
+		Look up all users that have cars which are in bad condtion.
+
+		=> SELECT users.* FROM users JOIN cars ON cars.user_id
+		=> WHERE cars.condition = 'bad';
+Other SQL methods
+	- COUNT() returns the count
+	- AVG()
+	- MAX()
+	- MIN()
+	- For more information look at postgresql documentation 
+	  http://www.postgresql.org/docs/8.1/static/functions.html
+
+belongs to vs has_many 
+	- 
+Habtm
+	- table's that have both has_many and belongs_to 
+      relationships with other tables. Tables that have a 
+      completely reversable relationship. 
+
+      example: 
+      	cars have multiple users and users have multiple cars.
+	- Usually we abstract this relationship data into a 
+	  completely different table. So we no longer have to store
+	  individual relationship inforomation with any of the 
+	  individual elements. 
+
+	  example:
+	  	initially two tables cars and users have a habtm
+	  	relationship. A third table a cars_users join table" 
+	  	would then have cars_id and users_id as well as it's 
+	  	own primary key.
+
+PSQL and Ruby
+ActiveRecord
+	- Used so ruby ojects can access databases and get 
+	  information from it.
+	- ActiveRecord is an ORB (Object Relational Mapper) that
+	  Rails uses. 
+	- Follows convention over configuration. 
+		example 
+			Class User maps to a table named users in which-
+			ever database we point it at.
+	- Active record automatically gives a primary key and 
+	  a created at and updated at timestamp once you add 
+	  an element to a database. 
+	- Active record builds SQL in the back end and we can 
+	  see this through the following. 
+
+	  	example 
+	  	>  User.where(:name => "Richard").to_sql
+	  	=> SELECT 'users'.* FROM 'users' WHERE 'users'.'name' 
+	  	=> = 'richard'
+	  practice using ActiveRecord orm and try to understand 
+	  the sql that it generates to learn sql!
+	- To get a better handle on rails associations visit:
+	  http://guides.rubyonrails.org/association_basics.html
+

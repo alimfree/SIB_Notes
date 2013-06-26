@@ -1,0 +1,35 @@
+#alimfree
+#Rails Lab Notes
+
+Resources:
+	- http://railsapps.github.io/what-is-ruby-rails.html
+	- http://guides.rubyonrails.org/getting_started.html#creating-a-new-rails-project
+Rails migrations 
+	- are classes used to make modifying data 
+	  tables easy
+	- Rails uses rake commands to run migrations.
+	- Rails also knows how to reverse changes made
+	  by migration commands.
+
+Rails Opinionated
+	- There's no "right way" to do something in Perl. 
+	  In contrast, there is one correct "Rails way."
+	- Less problems will arise if you follow rails 
+	  conventions. 
+
+Rails Omakase
+	- Some of the best developers decided which 
+	  conventions are best and built rails with
+	  this in mind.
+
+Convention Over Configuratoin
+	- Rails makes assumptions about configuration
+	  based on Rails Conventions. Eg. When you create 
+	  A modle  object "User" rails will automatically
+	  save data into database table named "users" 
+	  without any extra configuration.
+
+DRY
+	- Rails developers use a Dont-Repeat-Yourself 
+	  principle; simply avoid duplication to skirt 
+	  complexity and unintentional bugs. 
