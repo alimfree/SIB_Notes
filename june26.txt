@@ -1,0 +1,50 @@
+#alimfree
+#June 26
+#Ben Rails 2
+
+
+git is a distributed version control system. Your local branches 
+are just as important as those on github. If github goes down 
+you can still push and pull from your teammates machines.
+
+git flow
+ - Primarily exists to avoid your website from going down.  
+   Developers typically have several branches before pushing 
+   code live to the web. This system exists to avoid merging 
+   bugs. 
+
+
+Git hub Flow
+ - There's one branch that is always going on production 
+   typically called /master.
+ - Master branch will be live on the internet. 
+ - Git makes it easy to avoid pushing broken code so development
+   usually is broken up into feature branches. 
+ - Feature branches are issued pulled requests. Requesting to 
+   add the feature to push to master. 
+ - Code review required before anything is added to master
+   first Only the difference in the branches essentially only 
+   the features  are reviewed instead of the entire new branch. 
+ - Once the pull request is accepted the feature branch is  
+   merged with master.
+
+   You should constantly be merging master into your branch so 
+   you have all the recent merges to master. Effectively 
+   avoiding conflicts between your branch and master.
+
+ Rebasing
+ 	Read into it and look for when it's appropriate to use this 
+ 	vs merging master to your branch.
+
+Reseverster Project Repository	
+https://github.com/StartupInstitute/reservester-bo-s13
+Play around with github interface and pulling/merging from and 
+into other branches. 
+
+Good interview questions to ask employers 
+   how do you work as a dev team. how do you handle pull
+   requests?
+   What's your development practice? 
+   How often do you deploy?
+
+Thoughtbot prime how to use
