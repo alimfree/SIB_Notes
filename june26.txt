@@ -1,6 +1,6 @@
 #alimfree
 #June 26
-#Ben Rails 2
+#Bob Breznak Rails 2
 
 
 git is a distributed version control system. Your local branches 
@@ -47,4 +47,4 @@ Good interview questions to ask employers
    What's your development practice? 
    How often do you deploy?
 
-Thoughtbot prime how to use
+Thoughtbot prime pretty sick expert rails developers on hand. 
