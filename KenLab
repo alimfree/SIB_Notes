@@ -1,0 +1,56 @@
+#alimfree
+#Ken Maziata Startup Institute Boston
+# resource lecture slides: 
+
+Introduction
+Working Agreement Interview tips
+	-Setting expectations on how I work and how i'd work with you and allow you to set your expectations. 
+	- Mutual respect between student and teacher equals it's ok to call me out on things if I have the same privelige.
+	- Ask company what their testing philosophy is BDD vs TDD
+
+	dhh creator of rails look up his philosophy on testing 
+
+Testing
+	Why test?
+	it's a part of the ruby community culture.
+	DHH "the imprtant thing is that wae are testing the tools don't matter "
+
+	Testing basics
+	Unit tests 
+		-tests models to see how your tables relate to each other the way you expect them to. Use unit tests wtoyou assert that your code works by describing what you want to do and why your doing it that way. 
+
+	Functional tests
+		- Tests the controllers. This is in a different directory in the tests folder. THis makes sure that when you call a controller action the request is doing exactly what you want it to do. Again testing interaction in the rails app
+
+	look up cody fauser http status codes to better understand the http errors codes. 
+
+	Integration Tests 
+		-Used to test end to end functionality. Integration tests are a high overview: it's used to give another person an idea of how your app should work.
+
+	test helper
+		- a place to dump code usedacross many tests
+		- a place to configure how the tests run
+		- a place to tell the tests how we want them to run. 
+
+	Testing Framework
+		-Test unit comes standard with ruby -no need to install gem. 
+		- RSpec typically used to be read as documentation for your app. Creates documentation for other developers. 
+		-MiniTest is a simpler version of RSpec and Test unit that runs faster and has less features. THis framework comes with rails using the Test unit syntax
+		- Cucumber is one of the leading integration testing frameworks that allows people to write tests in a way that's closer to language.
+		-Shoulda developed by thoughtbot -not widely used by ruby community. 
+
+	CI Solution
+		continuous integration: allowing a server to run and constantly excute tasks. Used to run repeated tasks automatically.
+			-Leading framework is Jenkins which is written in Java
+			-Hudsin the same project with some additional features. It's the leading competing solution so many ruby developers use this as well.-Travis is another solution programmed in Ruby 
+
+	Testing Javascript
+		- Check out gem 'konacha' helps you write good javascript testing code.
+
+	Best Practices
+		- Write tests as you build new features... write tests as you go. Preferrably you write tests before you write the features.
+		- Shoot for high test coverage, but don't go crazy. Find a balance on what you should test for rake stats gives you stats on your source 
+		files. And maybe even something like newrelic. Shoot for a 1 to 1 code for tests and code for app. 
+		- Never allow brokern tests into your main branch (master/developer) better to have no tests than broken tests. 
+		- Don't Merge code into your main branch if hte full test suite hasn't passed. (JHiker coop at paypal)
+		- Mention the fact that your tests pass and include the output of your tests as notes. 

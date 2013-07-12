@@ -1,0 +1,77 @@
+#alimfree
+#July 3 
+
+Get a database viewer addon for firefox or chrome to make debugging easier. tupls
+
+Development Lifecycle
+
+plan target build test merge deliver
+
+planning
+	- Figuring out the end goal without becoming too inflexible 
+	- Write up a roadmap to plan out goals 
+	- Wireframs to sketch thoughts and tentative outline for apps
+	- swagger apagee, an api spec, rest action verbs to identify 
+	  the functionality of the webapp.
+
+	  document the build process. 
+
+	  
+target 
+	- create actionable tasks to deliver a final product. 
+	- create the smallest version of your product quickly. 
+	- focus in on the essential value add of your product. 
+
+	when building apps and adding features ask the following 		questions
+	- Build Independent tasks
+	- negotiable "ask the tough quesitons like is this really  		  necessary.
+	- Valuabe "how will this add value to our product.
+	- Estimatable "how do you estimate the cost and benefit of
+	  features.
+	- Small, "how much time will this take can we make a simpler 		  version.  
+	- Testable, figure out how to test the accuracy of your 	  estimates.		
+
+	ticket tracking software like Trello, geero
+
+build 	
+	- A clever person solves a problem a wise person avoids it.
+	- Think about what matters and only build the essentials
+	- reuse. find other things out there that you can use instead 
+	  of rebuilding existing software. 
+	- Lean UX or Lean Startup two must reads. 
+	- Don't be too loyal to a technology, use it until it no longer
+	  solves your problems. 
+	- Don't repeat yourself
+	- Technical debt = owing features to users. Balancing 		  technical and practical solutions to prioritize problems. 
+
+Test 
+	- black box vs white box testing. Blackbox testing doesn't tie 
+	  a solution to a specific implementation and focuses on the 
+	  results. White box testing you are given the implementation 
+	  and then focus on how to solve the problem. 
+
+	  rails antipatterns by Chad Pytel ceo of thoughtbot
+
+	- Don't cut out time to test your code making sure you
+	  understand the specifications. Also this simplifies complex 
+	  processes. 
+
+	seige chaosmonkey Functional testing 
+	egg usability testing replay a person's session on your site. 
+	recoverability how do restore failed databases
+	penetration testing hiring whitehat hackers. 
+
+Merge 
+	Collaborating on projects with other developers. 
+	- making small merges and merging frequently. 
+
+Deliver
+	Try and deliver many features quickly and not one feature after
+	months of preparation. 
+	Measure your progress and map them to your goals and planning
+
+
+
+rake db:reset //destroys your tables and all previous migrations.
+	
+	 

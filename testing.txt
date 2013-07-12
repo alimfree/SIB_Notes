@@ -1,0 +1,12 @@
+#alimfree
+#lab 3
+
+
+unit testing 
+	It's the smallest testable part of an application. 
+	Think about the specificatins for whichever feature you are
+	buidling when unit testing.
+
+
+Good Questions to ask employers
+what is your testing philosophy? 
