@@ -54,3 +54,6 @@ Testing
 		- Never allow brokern tests into your main branch (master/developer) better to have no tests than broken tests. 
 		- Don't Merge code into your main branch if hte full test suite hasn't passed. (JHiker coop at paypal)
 		- Mention the fact that your tests pass and include the output of your tests as notes. 
+
+
+[Raw Presentation](https://docs.google.com/presentation/d/16alEwiVVW2x-Dnu2rZt2mT_td9lYXuLYjodU9flfQv8/edit)
